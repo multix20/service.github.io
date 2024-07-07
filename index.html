@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios en Tortel, Villa O'Higgins y Cochrane</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <!-- Comentado porque no se usa actualmente
+    <nav>
+        <div class="nav-container">
+            <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+            <span id="services-text" class="services-text">Servicios / Service</span>
+            <div class="social-icons">
+                <a href="https://wa.me/tu-numero" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@tu-usuario" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+        <ul id="navbar">
+            <li><a href="#comida"><i class="fas fa-utensils"></i><span class="nav-text"> Comida, restaurant</span></a></li>
+            <li><a href="#hotel"><i class="fas fa-bed"></i><span class="nav-text"> Hotel, acomodation</span></a></li>
+            <li><a href="#tours"><i class="fas fa-map-signs"></i><span class="nav-text"> Tours</span></a></li>
+            <li><a href="#minimarket"><i class="fas fa-shopping-basket"></i><span class="nav-text"> Minimarket</span></a></li>
+            <li><a href="#transporte"><i class="fas fa-bus"></i><span class="nav-text"> Transporte</span></a></li>
+        </ul>
+    </nav> -->
+
+    <!-- Sección Principal -->
+    <header id="header">
+        <h1>
+            <span class="spanish">Bienvenidos</span>
+            <span class="english">Welcome</span>
+        </h1>
+        <p>
+            <span class="spanish">Encuentra todos los servicios que necesitas de forma rápida y sencilla.</span>
+            <span class="english">Find all the services you need quickly and easily.</span>
+        </p>
+        <div class="cards-container">
+            <div class="card card-tortel" data-town="tortel">
+                <div class="card-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Tortel</p>
+                </div>
+            </div>
+            <div class="card card-villa-ohiggins" data-town="villa-ohiggins">
+                <div class="card-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Villa O'Higgins</p>
+                </div>
+            </div>
+            <div class="card card-cochrane" data-town="cochrane">
+                <div class="card-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Cochrane</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor de Servicios -->
+    <section class="services-container" id="services-container">
+    </section>
+
+    <!-- Todos los servicios 
+    <div id="all-services" style="display:none;">
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=comida"><i class="fas fa-utensils"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=hotel"><i class="fas fa-bed"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=tours"><i class="fas fa-map-signs"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=minimarket"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=transporte"><i class="fas fa-bus"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=comida"><i class="fas fa-utensils"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=hotel"><i class="fas fa-bed"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=tours"><i class="fas fa-map-signs"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=minimarket"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=transporte"><i class="fas fa-bus"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=comida"><i class="fas fa-utensils"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=hotel"><i class="fas fa-bed"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=tours"><i class="fas fa-map-signs"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=minimarket"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=transporte"><i class="fas fa-bus"></i></a>
+        </div>
+    </div> 
+    -->
+    <div id="all-services" style="display:none;">
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=comida"><i class="fas fa-utensils"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=hotel"><i class="fas fa-bed"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=tours"><i class="fas fa-hiking"></i></a> <!-- Cambiado aquí -->
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=minimarket"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <div class="service" data-town="tortel">
+            <a href="servicio.html?town=tortel&service=transporte"><i class="fas fa-bus"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=comida"><i class="fas fa-utensils"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=hotel"><i class="fas fa-bed"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=tours"><i class="fas fa-hiking"></i></a> <!-- Cambiado aquí -->
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=minimarket"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <div class="service" data-town="villa-ohiggins">
+            <a href="servicio.html?town=villa-ohiggins&service=transporte"><i class="fas fa-bus"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=comida"><i class="fas fa-utensils"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=hotel"><i class="fas fa-bed"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=tours"><i class="fas fa-hiking"></i></a> <!-- Cambiado aquí -->
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=minimarket"><i class="fas fa-shopping-basket"></i></a>
+        </div>
+        <div class="service" data-town="cochrane">
+            <a href="servicio.html?town=cochrane&service=transporte"><i class="fas fa-bus"></i></a>
+        </div>
+    </div>
+   
+
+    <a href="https://wa.me/tu-numero" class="whatsapp-floating" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./assets/javaUno.js"></script>
+    <script src="./assets/data.js"></script>
+    <script src="./assets/servicio.js"></script>
+</body>
+</html>
